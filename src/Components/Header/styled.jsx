@@ -4,10 +4,10 @@ import BgImg from './img/imgHeader.jpg'
 
 const HeadeR = styled.header`
    position:fixed;
-   /*background-color: #ffcc0080;*/
+   background-color: #ffcc0080;
    background-size:cover;
-    border-bottom:1px solid #fffbbb;
-   height:70px;
+    border-bottom:4px solid #ffffbb;
+   height:80px;
    width:100%;
    box-shadow:4px 3px 8px #68676680;
    display:flex;
@@ -19,10 +19,10 @@ const HeadeR = styled.header`
      display:flex;
      align-items:center;
      opacity:none;
-     height:56%;
+     height:40%;
      border-radius:4px;
      background-color:#ffff88;
-     box-shadow:4px 3px 3px #68676680;
+     
      margin:12px;
      border:4px solid #ffffbb;
     #icons{
