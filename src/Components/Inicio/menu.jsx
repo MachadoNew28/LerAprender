@@ -239,8 +239,6 @@ const ArrayMenuPrincipal=[
       id2:'lis2',  
   }
 ];
-
-
  
 function MenuPrincipal(){
     return(

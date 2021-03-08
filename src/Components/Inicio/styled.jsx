@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BgInicio from './img/bginicio.jpg'
+
 
 export const Lista=styled.ul`   
 `;
@@ -14,9 +14,8 @@ const Estilo=styled.div`
       
     height:600px;
     width:100%;
-    background-image:url(${BgInicio});
     background-size:cover;
-    margin-top:14%;
+    
     position: fixed;
     opacity:1.2;
   }
@@ -26,8 +25,8 @@ const Estilo=styled.div`
 `; export default Estilo;
 
 export const Opacidade=styled.div`
-    background-color:#ffff0088;
-    margin-top:10%;
+    margin-top:20%;
+    background-color:transparent;
     height:auto;
     width:100%;
     display:flex;
@@ -35,33 +34,7 @@ export const Opacidade=styled.div`
     align-items:center;
     justify-content:center;
     background-size:cover;
-    animation: neon12   infinite ease-out 240s;
-    
-
-    @keyframes neon12{
-      from{
-      
-        background-position:-1222px;
-        background-image:url(${BgInicio});
-        
-      }
-           35%{
-           
-              color:#ffaa00;
-            }
-            45%{
-              
-              color:#ff0aa0;
-            }
-      to{
-        filter:drop-shadow(-0 0 30px var(--cor));
-        background-image:url(${BgInicio});
-        background-position:1222px;
-        
-      }
-    }
-    
-  
+   position:fixed;
 `;
  
 export const Div1=styled.div`
@@ -86,15 +59,15 @@ export const Div1=styled.div`
     margin:12px;
     @media screen and (max-width:600px){
       width:41%;
-      font-size:17px;
-      color:#ff9900;
-      text-shadow:2px 4px 3px   #123;
-      font-weight:bold;
+      font-size:19px;
+      color:#ffbf00;
+      text-align:center;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
   }
-
+  
   #lis1{
-      background-color:#155430;
+      background-color:#ffffbc;
       width:100%;
       #icons{
         color:#6657ff;
@@ -124,7 +97,7 @@ export const Div1=styled.div`
       }
     }
     #lis2{
-      background-color:#334aad;
+      background-color:#ffffbc;
       #icons{
           color:#6657ff;
           animation-iteration-count:4;
@@ -158,7 +131,7 @@ export const Div1=styled.div`
     }
 
     #lis3{
-      background-color:#778844;
+      background-color:#ffffbc;
       #icons3{
            color:#6657ff;
            font-size:70px;
@@ -224,7 +197,7 @@ export const Div1=styled.div`
     }
   
     #lis4 {
-      background-color:#ff90aa;
+      background-color:#ffffbc;
       #icons4{
         font-size:100px;
         animation-iteration-count:14;
@@ -252,7 +225,7 @@ export const Div1=styled.div`
     }
 
     #lis6 {
-      background-color:#f12233;
+      background-color:#ffffbc;
       #icons6{
         font-size:100px;
         animation-iteration-count: 8s;
@@ -281,8 +254,8 @@ export const Div1=styled.div`
 
 
     #lis7 {
-      background-color:#fff;
-      #icons7{
+      background-color:#ffffbc;
+        #icons7{
           animation: beat  infinite ease-out 1s;
           @keyframes beat{
             from{
@@ -300,7 +273,7 @@ export const Div1=styled.div`
     }
 
     #lis8 {
-      background-color:#ffcc77;
+      background-color:#ffffbc;
       #icons8{
         font-size:100px;
           animation: Variable alternate  infinite ease-out 3s;
@@ -324,7 +297,7 @@ export const Div1=styled.div`
     }
 
    #lis10{ 
-     background-color:#324456;
+     background-color:#ffffbc;
      #icons10{
         color:#6657ff;
         animation: Translate1 alternate-reverse  infinite ease-in-out 4s;
@@ -358,14 +331,14 @@ export const Div1=styled.div`
   
 `;
 export const Li=styled.h1`    
-    height:160px;
+    height:120px;
     width:100%;
     display:flex;
     align-items:center;
     flex-direction:column;
     justify-content:center;
     background-color:#25c9d4;
-    border:4px inset #ffa000;
+    border:4px inset #ffffba;
     color:#faaffa;
     font-size:20px;
     text-align:center;
@@ -376,7 +349,7 @@ export const Li=styled.h1`
        
     }
     #icons{
-      font-size:100px;
+      font-size:70px;
       color:#ffa000;
       @media screen and (max-width:600px){
         font-size:20px;
@@ -460,7 +433,7 @@ export const ListMenu=styled.div`
    &::-webkit-scrollbar-thumb{
         border:4px solid #ffbb22;
         background-color:#ffbb22;
-        background-image:url(${BgInicio});
+  
         border-radius:12px;
    }
 `;  

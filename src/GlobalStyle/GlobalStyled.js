@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import fundo from './fundoP.jpg'
+import fundo from './fundo2.jpg'
+ 
 export const Global = createGlobalStyle`
   *{
      font-family:Arial, Helvetica, sans-serif;
@@ -14,7 +15,32 @@ export const Global = createGlobalStyle`
    
   body{
     background-color:#fdfdfdf1;
-   
+    animation: neon12   infinite ease-out 240s;
+     
+    background-size:cover;
+    @keyframes neon12{
+      from{
+      
+        background-position:-1222px;
+        background-image:url(${fundo});
+        
+      }
+           35%{
+           
+              color:#ffaa00;
+            }
+            45%{
+              
+              color:#ff0aa0;
+            }
+      to{
+        filter:drop-shadow(-0 0 30px var(--cor));
+        background-image:url(${fundo});
+        background-position:1222px;
+        
+      }
+    }
+    
      
     
      /* background-image:url(${fundo});*/

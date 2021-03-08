@@ -4,8 +4,10 @@ import BgImg from './img/imgHeader.jpg'
 
 const HeadeR = styled.header`
    position:fixed;
+   background-image: url(${BgImg});
    background-color: #ffcc0080;
    background-size:cover;
+   opacity:0.9;
     border-bottom:4px solid #ffffbb;
    height:80px;
    width:100%;
@@ -18,16 +20,17 @@ const HeadeR = styled.header`
    #link{
      display:flex;
      align-items:center;
+     justify-content:center;
      opacity:none;
-     height:40%;
-     border-radius:4px;
+     height:80%;
+     width:70px;
      background-color:#ffff88;
      
      margin:12px;
-     border:4px solid #ffffbb;
+     border:2px solid #ffffbb;
     #icons{
-      color:#ff4321;
-      font-size:24px;
+      color:#ff9898;
+      font-size:34px;
       margin:12px;
     }
    }
@@ -39,18 +42,16 @@ export const Div = styled.div`
      width:50%;
      height:50px;
      margin:25% auto 0 auto;
-     
-     display:flex;
+     display:none;
      align-items:center;
      justify-content:space-between;
      #link{
-       box-shadow:2px 4px 2px 2px #68676680; 
-       background-color:#ffaacc;
-       padding:0 22px;
+       
        margin:12px ;
       #icons{
-        font-size:44px;
-        color:#fff766;
+      
+        font-size:34px;
+        color:#fff009;
         border:2px solid #ffff00;
         border-radius:100%;
       }

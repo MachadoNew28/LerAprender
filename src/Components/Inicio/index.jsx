@@ -19,13 +19,14 @@ import { H1 } from '../Portugues/Alfabeto/styled'
 const Inicio=()=>{
   return(
   <> 
-    <Estilo>
+    
+    
       <Opacidade>
          <Div1 > 
             <MenuPrincipal></MenuPrincipal>
         </Div1>
       </Opacidade>
-    </Estilo>
+     
  </>
 );
 }
