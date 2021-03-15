@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../Header/header'
-import Estilo,{Div1Conteiner,Opacidade,Div1,H1,Li,A,B,C,D,E,F,G,H,I,J,L,M,N,O,P,Q,R,S,T,U,V,X,Z} from './styled'
+import {Div1,Opacidade} from '../../Inicio/styled';
+import Estilo,{Div1Conteiner,H1,Li,A,B,C,D,E,F,G,H,I,J,L,M,N,O,P,Q,R,S,T,U,V,X,Z} from './styled'
 import   { useState, useEffect } from 'react'
 import SoundA from './Audio/a.m4a';
 import SoundB from './Audio/b.m4a';
@@ -30,12 +31,9 @@ function PlayAlfa(){
 const Alfabeto=()=>{
   return(
   <>
-    <Estilo>
-    <Header></Header>
-      <Opacidade>   
-        <Div1Conteiner>
-          {/*<H1> <H1>Tema:Alfabeto</H1></H1>*/}
-          <Div1>
+    <Opacidade>   
+        {/*<H1> <H1>Tema:Alfabeto</H1></H1>*/}
+        <Div1 className="ConteinerLetters">
             <A onMouseOver={PlayA} id="Letras">A</A>
             <B onMouseOver={PlayB} id="Letras">B</B>
             <C id="Letras">C</C>
@@ -59,10 +57,8 @@ const Alfabeto=()=>{
             <V id="Letras">V</V>
             <X id="Letras">X</X>
             <Z id="Letras">Z</Z>
-          </Div1>
-        </Div1Conteiner>
-      </Opacidade>
-    </Estilo>
+        </Div1>
+    </Opacidade>
   </>
 );
 }

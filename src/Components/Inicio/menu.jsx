@@ -1,11 +1,9 @@
 import {
         FaAssistiveListeningSystems, FaBookOpen,
-        FaBrain,FaCircle,FaGgCircle,FaHatCowboySide
-        ,FaHeartbeat,FaMusic,FaPencilAlt,FaQuestion,
-        FaSortNumericDown, FaSquare, FaSquareRootAlt, 
-        FaTree
-      }
-from 'react-icons/fa'
+        FaBrain,FaCircle,FaHeartbeat,FaMusic,FaQuestion,
+        FaSquare, FaSquareRootAlt, 
+      }from 'react-icons/fa'
+
 import React, {useState} from 'react'
 import {Li,List,Lista} from './styled'
 import {Link} from 'react-router-dom'
@@ -21,13 +19,7 @@ function PlayHover(){
   
 }
   
-export const Animation=()=>(
-    < >
-      
-    
-    </>
-);
-
+ 
 const ArrayMenuPrincipal=[
     {
         title:'L. Portuguesa',
@@ -239,8 +231,10 @@ const ArrayMenuPrincipal=[
       id2:'lis2',  
   }
 ];
- 
+
 function MenuPrincipal(){
+  var [click,setClick] = useState(1); 
+  
     return(
       <>
      {
@@ -248,7 +242,9 @@ function MenuPrincipal(){
            <Link 
              id={item.id} 
              key={index} 
-             to={item.Path}>
+             to={item.Path}
+             >
+               {console.log(click)}
              <Li 
                key={index}
                id={item.id2}>{item.imagem}{item.imagem2}
@@ -259,6 +255,7 @@ function MenuPrincipal(){
          }
      </>
  )
+  
 }
  export default MenuPrincipal;
 

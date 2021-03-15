@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import fundo from './fundo2.jpg'
+import fundo from './bginicio.jpg'
  
 export const Global = createGlobalStyle`
   *{

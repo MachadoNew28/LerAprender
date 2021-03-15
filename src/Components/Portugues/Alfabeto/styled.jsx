@@ -6,7 +6,7 @@ const Estilo=styled.div`
       
     height:600px;
     width:100%;
-    background-image:url(${BgInicio});
+ 
     background-size:cover;
     margin-top:0;
     position: fixed;
@@ -23,7 +23,7 @@ export const Menu=styled.div`
     background-size:cover;
     margin-right:10px;
     margin-top:1%;
-    border:4px inset  #25c9d4;
+    border:4px inset  #ffffbb;
     /*background-color:#aaddcc;*/
     
 `;
@@ -126,52 +126,45 @@ export const Div1=styled.div`
       }
     }
 
-  #Letras{
-    height:90px;
-    width:10%;
-    background-size:cover;
-    background-color:#ffdd33dd;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:6px;
-    box-shadow:2px 4px 5px #456;
-    border:4px solid #189; 
-    margin:7px;
-    transition:.1s ease-out;
-    cursor: pointer;
-  }
+  
+  @media screen and (min-width:1000px){
+    background-color:#fff;
+    width:99%;
+    height:500px;
+    margin:1% auto 4% auto;
+    border:1px inset  #25c9d4;
+    border:14px solid #ffffbb;
     
-
-  #Letras :active{
-    background-color:#ffdd33aa;
-    transition:.1s ease-in-out;
-    border:9px solid #431;
-  }
-  #Letras:hover{
-    background-color:#ffdd33dd;
-    border:5px solid #432;
-  }
+    &::-webkit-scrollbar{
+        background-color:#fff;
+        border-radius:12px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color:#fff;
+        border-radius:12px;
+        border:1px solid #ddd;
+    }
+    &::-webkit-scrollbar-thumb:active{
+        opacity:0.6;
+    }
+}
 ;`
  
 
 export const A=styled.h1`
     color:#ff33ee;
-    text-shadow:2px 3px 4px #005500;
     font-size:70px;
     background-color:#a5d425;
     
 `;
 export const B=styled.h1`
     color:#ffee44;
-    text-shadow:2px 3px 4px #005500;
     font-size:75px;
     background-size:cover;
      
 `;
 export const C=styled.h1`
     color:#ffaa33;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
     
@@ -179,7 +172,6 @@ export const C=styled.h1`
  
 export const D=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
@@ -187,21 +179,18 @@ export const D=styled.h1`
 
 export const E=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
 `;
 export const F=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
 `;
 export const G=styled.h1`
     color:#ccffaa;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#123456;
      
@@ -209,7 +198,6 @@ export const G=styled.h1`
 `;
 export const H =styled.h1`
     color:#bb2211;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#ffaa88;
      
@@ -218,49 +206,42 @@ export const H =styled.h1`
  
 export const I=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
 `;
 export const J=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
 `;
 export const L=styled.h1`
     color:#ff33a1;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#109866;
      
 `;
 export const M=styled.h1`
     color:#bbaaff;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#543780;
      
 `;
 export const N=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
 `;
 export const O=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
 `;
 export const P=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
@@ -268,7 +249,6 @@ export const P=styled.h1`
 
 export const Q=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
@@ -276,14 +256,12 @@ export const Q=styled.h1`
 
 export const R=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-size:cover;
      
 `;
 export const S=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#ffbbcc;
      
@@ -291,7 +269,6 @@ export const S=styled.h1`
 
 export const T=styled.h1`
     color:#ffaa11;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#88aaff;
      
@@ -299,27 +276,23 @@ export const T=styled.h1`
 
 export const U=styled.h1`
     color:#ffeeee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#bbaaff;
      
 `;
 export const V=styled.h1`
     color:#cc33aa;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#23aadd; 
 `;
 
 export const X=styled.h1`
     color:#cc3344;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#aa33ff;
 `;
 export const Z=styled.h1`
     color:#ccaaff;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
     background-color:#654321;
 `;

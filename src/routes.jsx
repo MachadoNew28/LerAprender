@@ -9,11 +9,13 @@ import Silabas from './Components/Portugues/Silabas';
 import Matematica from './Components/Matematica'
 import EVP from './Components/EVP'
 import HeadeR from './Components/Header/header'
+import Login from './Components/login'
 
   const Routes=()=>(
     <BrowserRouter>
     <Route  component={HeadeR}/>
       <Switch>
+          <Route path="/login"  component={Login}/>
           <Route path="/" exact component={Inicio}/>
           <Route path="/Lingua_Portuguesa" component={Portugues}/>
           <Route path="/Alfabeto"  component={Alfabeto}/>

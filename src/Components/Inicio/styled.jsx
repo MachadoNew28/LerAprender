@@ -10,23 +10,17 @@ export const List=styled.ul`
 `;
  
 const Estilo=styled.div`
-  &{
-      
+  &{  
     height:600px;
     width:100%;
     background-size:cover;
-    
     position: fixed;
     opacity:1.2;
   }
-    
-
-
 `; export default Estilo;
 
 export const Opacidade=styled.div`
-    margin-top:20%;
-    background-color:transparent;
+   
     height:auto;
     width:100%;
     display:flex;
@@ -34,13 +28,17 @@ export const Opacidade=styled.div`
     align-items:center;
     justify-content:center;
     background-size:cover;
-   position:fixed;
+    position:fixed;
+   @media screen and (min-width:1000px){
+      margin-top:6%;
+      background-color:#0f000032;
+   }
 `;
  
 export const Div1=styled.div`
-  height:580px;
+  height:589px;
   width:100%;
-  margin:2% auto 1% auto;
+  margin:0 auto 1% auto;
   border-radius:4px;
   overflow:auto;
   display:flex;
@@ -48,26 +46,39 @@ export const Div1=styled.div`
   align-items:center;
   flex-wrap:wrap;
   padding:22px;
-@media screen and (max-width:600px){
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
+@media screen and (min-width:1000px){
+  background-color:#fff;
+  width:99%;
+  height:500px;
+  margin:1% auto 4% auto;
+  border:1px inset  #25c9d4;
+  border:14px solid #ffffbb;
+  
+  &::-webkit-scrollbar{
+      background-color:#fff;
+      border-radius:12px;
+  }
+  &::-webkit-scrollbar-thumb{
+      background-color:#fff;
+      border-radius:12px;
+      border:1px solid #ddd;
+  }
+  &::-webkit-scrollbar-thumb:active{
+     opacity:0.6;
+  }
+
 }
   #Link{
-    width:30%;
     margin:12px;
-    @media screen and (max-width:600px){
-      width:41%;
-      font-size:19px;
-      color:#ffbf00;
-      text-align:center;
-      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+    width:25%;
+    font-size:19px;
+    color:#ffbf00;
+    text-align:center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     height:200px;
   }
   
   #lis1{
-      background-color:#ffffbc;
       width:100%;
       #icons{
         color:#6657ff;
@@ -97,7 +108,6 @@ export const Div1=styled.div`
       }
     }
     #lis2{
-      background-color:#ffffbc;
       #icons{
           color:#6657ff;
           animation-iteration-count:4;
@@ -131,7 +141,6 @@ export const Div1=styled.div`
     }
 
     #lis3{
-      background-color:#ffffbc;
       #icons3{
            color:#6657ff;
            font-size:70px;
@@ -197,7 +206,6 @@ export const Div1=styled.div`
     }
   
     #lis4 {
-      background-color:#ffffbc;
       #icons4{
         font-size:100px;
         animation-iteration-count:14;
@@ -225,7 +233,6 @@ export const Div1=styled.div`
     }
 
     #lis6 {
-      background-color:#ffffbc;
       #icons6{
         font-size:100px;
         animation-iteration-count: 8s;
@@ -254,7 +261,6 @@ export const Div1=styled.div`
 
 
     #lis7 {
-      background-color:#ffffbc;
         #icons7{
           animation: beat  infinite ease-out 1s;
           @keyframes beat{
@@ -273,7 +279,6 @@ export const Div1=styled.div`
     }
 
     #lis8 {
-      background-color:#ffffbc;
       #icons8{
         font-size:100px;
           animation: Variable alternate  infinite ease-out 3s;
@@ -297,7 +302,6 @@ export const Div1=styled.div`
     }
 
    #lis10{ 
-     background-color:#ffffbc;
      #icons10{
         color:#6657ff;
         animation: Translate1 alternate-reverse  infinite ease-in-out 4s;
@@ -328,17 +332,68 @@ export const Div1=styled.div`
         }
       }
     }
+
+    /*ESTILIZANDO OUTRA PÁGINA ALFABETO */
+    #Letras{
+    height:90px;
+    width:10%;
+    background-size:cover;
+    background-color:#ffF;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:6px;
+    box-shadow:2px 4px 5px #f3f3f3;
+    border:1px solid #ffffbb; 
+    margin:7px;
+    transition:.1s ease-out;
+    cursor: pointer;
+  }
+    
+  #Letras :active{
+    background-color:#ffdd33aa;
+    transition:.1s ease-in-out;
+    border:9px solid #431;
+  }
+  #Letras:hover{
+    background-color:#ffdd33dd;
+    border:5px solid #432;
+    animation: Rotate alternate-reverse  infinite ease-out 1s;
+          @keyframes  Rotate{
+            from{
+               font-size:120px;
+               transform:rotateY(40deg);
+                
+            }
+            24%{
+              transform:rotate(-1110deg);
+              transform:rotateY(50deg);
+              color:#ffaa00;
+            }
+            36%{
+              transform:rotateX(-50deg);
+              color:#ff55bb;
+            }
+            to{
+              transform:rotateX(40deg);
+              font-size:100px;
+               
+            }
+        }
+     }
   
 `;
-export const Li=styled.h1`    
-    height:120px;
+
+export const Li=styled.h1`
+    height:150px;
     width:100%;
     display:flex;
     align-items:center;
     flex-direction:column;
     justify-content:center;
-    background-color:#25c9d4;
-    border:4px inset #ffffba;
+    background-color:#fff;
+    border:1px solid #ffffba;
+    box-shadow:3px 5px 14px 2px #f0f0f0;
     color:#faaffa;
     font-size:20px;
     text-align:center;
@@ -442,34 +497,28 @@ export const ListMenu=styled.div`
 
 export const A=styled.h1`
     color:#ff33ee;
-    text-shadow:2px 3px 4px #005500;
     font-size:70px;
 `;
 export const B=styled.h1`
     color:#ffee44;
-    text-shadow:2px 3px 4px #005500;
     font-size:75px;
 `;
 export const C=styled.h1`
     color:#ffaa33;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
 `;
  
 export const D=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
 `;
 
 export const E=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
 `;
 export const I=styled.h1`
     color:#ffaaee;
-    text-shadow:2px 3px 4px #005500;
     font-size:80px;
 `;
 

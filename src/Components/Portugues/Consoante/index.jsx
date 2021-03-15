@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../Header/header'
-import Estilo,{Menu,Div1Conteiner,Opacidade,Div1,H1,Li,ListMenu,A,B,C,D,E,F,G,H,I,J,L,M,N,O,P,Q,R,S,T,U,V,X,Z} from '../Alfabeto/styled'
+import {Div1,Opacidade} from '../../Inicio/styled'
+import Estilo,{Menu,Div1Conteiner,H1,Li,ListMenu,A,B,C,D,E,F,G,H,I,J,L,M,N,O,P,Q,R,S,T,U,V,X,Z} from '../Alfabeto/styled'
 import   { useState, useEffect } from 'react'
 import SoundB from './Audio/b.m4a';
 import SoundC from './Audio/c.m4a';
@@ -114,27 +115,8 @@ const Consoante=()=>{
     <Estilo>
     <Header></Header>
       <Opacidade>
-        <Menu>
-          <ListMenu>
-            <Link num="1" to="/"><Li>Língua Portuguesa</Li></Link>
-            <Li>Matemática</Li>
-            <Li>Educação Manual e Plastica</Li>
-            <Li>Estudo do Meio</Li>
-            <Li>Língua Portuguesa</Li>
-            <Li>Matemática</Li>
-            <Li>Educação Manual e Plastica</Li>
-            <Li>Estudo do Meio</Li>
-            <Li>Língua Portuguesa</Li>
-            <Li>Matemática</Li>
-            <Li>Educação Manual e Plastica</Li>
-            <Li>Estudo do Meio</Li>
-
-          </ListMenu>
-        </Menu>
-        <Div1Conteiner>
           {/*<H1> <H1>Tema:Alfabeto</H1></H1>*/}
           <Div1 border="4px solid #25c9d4">
-
             <B onClick={PlayB} id="Letras">B</B>
             <C onClick={PlayC} id="Letras">C</C>
             <D onClick={PlayD} id="Letras">D</D>
@@ -153,9 +135,7 @@ const Consoante=()=>{
             <V onClick={PlayV} id="Letras">V</V>
             <X onClick={PlayX} id="Letras">X</X>
             <Z onClick={PlayZ} id="Letras">Z</Z>
-            
           </Div1>
-        </Div1Conteiner>
       </Opacidade>
     </Estilo>
   </>

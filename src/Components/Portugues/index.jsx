@@ -10,21 +10,19 @@ import {FaAssistiveListeningSystems, FaBookOpen,
      FaTree,FaChevronLeft}
 from 'react-icons/fa'
 import {Link} from 'react-router-dom'
-import {MenuPortugues} from '../Inicio/menu'
+import {MenuMatematica, MenuPortugues} from '../Inicio/menu'
 import { H1 } from '../Portugues/Alfabeto/styled'
-
+var click=1;
 const Portugues=()=>{
   const hora=Date.now;
 return(
 <>
- <Estilo>
-   <Opacidade>
-       <Link to="/" >{hora}<FaChevronLeft></FaChevronLeft></Link><H1>Língua Portuguesa</H1>
+  <Opacidade>
       <Div1 > 
-         <MenuPortugues></MenuPortugues>
+        { click==2 ?<MenuMatematica></MenuMatematica>
+         :<MenuPortugues></MenuPortugues>}
      </Div1>
    </Opacidade>
- </Estilo>
 </>
 );
 }

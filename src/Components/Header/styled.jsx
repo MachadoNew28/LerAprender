@@ -4,10 +4,10 @@ import BgImg from './img/imgHeader.jpg'
 
 const HeadeR = styled.header`
    position:fixed;
-   background-image: url(${BgImg});
-   background-color: #ffcc0080;
+   z-index:2;
+   background-color: #fff;
    background-size:cover;
-   opacity:0.9;
+  
     border-bottom:4px solid #ffffbb;
    height:80px;
    width:100%;
