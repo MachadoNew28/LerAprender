@@ -12,12 +12,16 @@ from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 import {MenuMatematica, MenuPortugues} from '../Inicio/menu'
 import { H1 } from '../Portugues/Alfabeto/styled'
+import { Div } from '../Inicio/styled'
 var click=1;
 const Portugues=()=>{
   const hora=Date.now;
 return(
 <>
   <Opacidade>
+      <Div className="div-top-theme">
+         <H1 id="theme-top">Língua Portuguesa</H1>
+       </Div>
       <Div1 > 
         { click==2 ?<MenuMatematica></MenuMatematica>
          :<MenuPortugues></MenuPortugues>}

@@ -6,10 +6,6 @@ const ArrayIcons=[
       path:'/',
       icon: <FaHome id="icons"></FaHome>
     },
-    { 
-      
-      icon: <FaMusic id="icons"></FaMusic>  
-    },
     {
       icon: <FaList id="icons"></FaList> 
     }

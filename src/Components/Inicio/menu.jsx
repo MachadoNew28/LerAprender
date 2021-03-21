@@ -1,21 +1,24 @@
 import {
         FaAssistiveListeningSystems, FaBookOpen,
-        FaBrain,FaCircle,FaHeartbeat,FaMusic,FaQuestion,
-        FaSquare, FaSquareRootAlt, 
+        FaBrain,FaCircle,FaHeartbeat,FaLine,FaMusic,FaPlus,FaQuestion,
+        FaSortNumericDown,
+        FaSquare, FaSquareRootAlt, FaXRay, 
       }from 'react-icons/fa'
 
 import React, {useState} from 'react'
-import {Li,List,Lista} from './styled'
+import {Li} from './styled'
 import {Link} from 'react-router-dom'
-import Hover from './Audio/hover.m4a'
+import Hover from './Audio/cartoon003.mp3'
 
 function PlayClick(){
     const audio=new Audio(Hover );
     audio.play();
+    console.log('clicou')
 }
 function PlayHover(){
     const audio=new Audio(Hover);
     audio.play();
+    console.log('clicou')
   
 }
   
@@ -24,45 +27,50 @@ const ArrayMenuPrincipal=[
     {
         title:'L. Portuguesa',
         Path:'/Lingua_Portuguesa',
-        imagem: <FaBookOpen id="icons"></FaBookOpen>,
+        imagem: <FaBookOpen style={{color:'#ff00aa'}} id="icons"></FaBookOpen>,
         id:"Link",
-        id2:'lis1', 
+        id2:'lis1',
+        action:function Play(){
+          const audio=new Audio(Hover);
+          audio.play();
+          console.log('Já deu certo')
+        }
     },
     {
         title:'Matematica',
         Path:'/Matematica',
-        imagem: <FaSquareRootAlt id="icons"></FaSquareRootAlt>,
+        imagem: <FaSquareRootAlt style={{color:'#fddd11'}} id="icons"></FaSquareRootAlt>,
         id:"Link",
         id2:'lis2',  
     },
     {
         title:'Ed. M.e Plastica',
         Path:'/EducaçãoManual_Plastica',
-        imagem: <FaCircle id="icons3"></FaCircle>,
-        imagem2: <FaSquare id="icons31"></FaSquare>,
+        imagem: <FaCircle style={{color:'#fdd5d1'}} id="icons3"></FaCircle>,
+        imagem2: <FaSquare style={{color:'#ffdd53'}} id="icons31"></FaSquare>,
         id:"Link",
         id2:'lis3',  
     },
     {
         title:' Estudo do Meio',
         Path:'/EstudoDoMeio',
-        imagem: <FaBrain id="icons4" ></FaBrain>,
+        imagem: <FaBrain style={{color:'#fdd098'}} id="icons4" ></FaBrain>,
         id:"Link",
         id2:'lis4',  
     },
     {
         title:' Cultura Geral',
         Path:'/CulturaGeral',
-        imagem:'',
+        imagem: <FaMusic style={{color:'#ffdc98'}}  id="icons"></FaMusic>,
         id:"Link",
-        id2:'lis5',  
+        id2:'lis1',  
     },
     {
         title:'Curiosidade',
         Path:'/Curiosidade',
-        imagem:<FaQuestion  id="icons6" ></FaQuestion>,
+        imagem:<FaQuestion style={{color:'#aaff04'}}  id="icons" ></FaQuestion>,
         id:"Link",
-        id2:'lis6',  
+        id2:'lis1',  
     },
     {
         title:'Saúde',
@@ -75,37 +83,37 @@ const ArrayMenuPrincipal=[
     {
         title:'Anedotas',
         Path:'/Anedotas',
-        imagem: <FaAssistiveListeningSystems id="icons8"></FaAssistiveListeningSystems>,
+        imagem: <FaAssistiveListeningSystems  style={{color:'#aaddd4'}} id="icons8"></FaAssistiveListeningSystems>,
         id:"Link",
         id2:'lis8',  
     },
     {
         title:'Histórias',
         Path:'/Histórias',
-        imagem: <FaAssistiveListeningSystems id="icons8"></FaAssistiveListeningSystems>,
+        imagem: <FaAssistiveListeningSystems style={{color:'#ffde04'}} id="icons"></FaAssistiveListeningSystems>,
         id:"Link",
-        id2:'lis9',  
+        id2:'lis1',  
     },
     {
         title:'Educação Musical',
         Path:'/EducaçãoMusical',
-        imagem: <FaMusic  id="icons10"></FaMusic>,
+        imagem: <FaMusic style={{color:'#44ddd3'}}  id="icons"></FaMusic>,
         id:"Link",
-        id2:'lis10',  
+        id2:'lis1',  
     },
     {
         title:'Boas Maneiras',
         Path:'/BoasManeiras',
-        imagem:'',
+        imagem: <FaMusic style={{color:'#aafdaa'}}  id="icons"></FaMusic>,
         id:"Link",
-        id2:'lis11',  
+        id2:'lis1',  
     },
     {
         title:'Aprenda Inglês',
         Path:'/Inglês',
-        imagem:'',
+        imagem: <FaMusic style={{color:'#ff44f3'}}  id="icons"></FaMusic>,
         id:"Link",
-        id2:'lis12',  
+        id2:'lis1',  
     }
   ]
 
@@ -113,36 +121,36 @@ const ArrayMenuPrincipal=[
     {
         title:'Alfabeto',
         Path:'/Alfabeto',
-        imagem: <FaBookOpen id="icons"></FaBookOpen>,
+        imagem: <FaBookOpen style={{color:'#ffefac'}} id="icons"></FaBookOpen>,
         id:"Link",
         id2:'lis1', 
     },
     {
         title:'Consoante',
         Path:'/Consoante',
-        imagem: <FaSquareRootAlt id="icons"></FaSquareRootAlt>,
+        imagem: <FaSquareRootAlt style={{color:'#ffaeda'}} id="icons"></FaSquareRootAlt>,
         id:"Link",
         id2:'lis2',  
     },
     {
         title:'Vogal',
         Path:'/Vogal',
-        imagem: <FaCircle id="icons3"></FaCircle>,
-        imagem2: <FaSquare id="icons31"></FaSquare>,
+        imagem: <FaCircle style={{color:'#ffbbff'}} id="icons3"></FaCircle>,
+        imagem2: <FaSquare style={{color:'#ff00aa'}} id="icons31"></FaSquare>,
         id:"Link",
         id2:'lis3',  
     },
     {
         title:'Formação de Sílabas',
-        Path:'/EstudoDoMeio',
-        imagem: <FaBrain id="icons4" ></FaBrain>,
+        Path:'/monosílabas',
+        imagem: <FaBrain style={{color:'#ff652e'}} id="icons4" ></FaBrain>,
         id:"Link",
         id2:'lis4',  
     },
     {
         title:'Gramática',
         Path:'/Gramática',
-        imagem:'',
+        imagem: <FaMusic style={{color:'#ff44f3'}}  id="icons10"></FaMusic>,
         id:"Link",
         id2:'lis5',  
     },
@@ -164,38 +172,37 @@ const ArrayMenuPrincipal=[
 
   const ArrayMenuMatematica=[
       {
-        title:'Numeração',
-        Path:'/Numeração',
-        imagem: <FaBookOpen id="icons"></FaBookOpen>,
+        title:'Contagem',
+        Path:'/contagem',
+        imagem: <FaSortNumericDown id="icons"></FaSortNumericDown>,
         id:"Link",
         id2:'lis1', 
     },
     {
         title:'Soma',
         Path:'/Soma',
-        imagem: <FaSquareRootAlt id="icons"></FaSquareRootAlt>,
+        imagem: <FaPlus id="icons"></FaPlus>,
         id:"Link",
         id2:'lis2',  
     },
     {
         title:'Multiplicação',
         Path:'/Multiplicação',
-        imagem: <FaCircle id="icons3"></FaCircle>,
-        imagem2: <FaSquare id="icons31"></FaSquare>,
+        imagem: <div id="icons3">X</div>,
         id:"Link",
         id2:'lis3',  
     },
     {
         title:' Subtração',
         Path:'/EstudoDoMeio',
-        imagem: <FaBrain id="icons4" ></FaBrain>,
+        imagem: <FaLine id="icons4" ></FaLine>,
         id:"Link",
         id2:'lis4',  
     },
     {
         title:'Gramática',
         Path:'/Gramática',
-        imagem:'',
+        imagem: <FaMusic style={{color:'#ff44f3'}}  id="icons10"></FaMusic>,
         id:"Link",
         id2:'lis5',  
     },
@@ -243,13 +250,14 @@ function MenuPrincipal(){
              id={item.id} 
              key={index} 
              to={item.Path}
+             onClick={item.action}
              >
-               {console.log(click)}
+                
              <Li 
                key={index}
-               id={item.id2}>{item.imagem}{item.imagem2}
+               id={item.id2}>{item.imagem}{item.imagem2}{item.title}
              </Li>
-             {item.title}
+             
            </Link>
          ))
          }
@@ -267,10 +275,15 @@ function MenuPrincipal(){
          <Link 
            id={item.id} 
            key={index} 
+           onClick={PlayHover}
            to={item.Path}>
+              
            <Li 
              key={index}
-             id={item.id2}>{item.imagem}{item.imagem2}{item.title}
+             id={item.id2}
+             onClick={PlayHover}
+             >{item.imagem}{item.imagem2}{item.title}
+             
            </Li> 
          </Link>
        ))

@@ -1,8 +1,7 @@
 import React from 'react'
 import Header from '../../Header/header'
-import Estilo,{Menu,Div1Conteiner,Opacidade,Div1,H1,Li,ListMenu,A,B,C,D,E,F,G,H,I,J,L,M,N,O,P,Q,R,S,T,U,V,X,Z} from '../Alfabeto/styled'
-import {LinkAlfabeto} from '../styled'
-import   { useState, useEffect } from 'react'
+import {Div,Opacidade,Div1,A} from '../../Inicio/styled'
+import {H1} from '../styled'
 import SoundA from './Audio/a.m4a';
 import SoundB from './Audio/b.m4a';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
@@ -29,176 +28,14 @@ function PlayAlfa(){
 
 
 const Silabas=()=>{
-  
-  
-   
-   
-  
   return(
-  
-  <>
-   
-    <Estilo>
-    <Header></Header>
-      <Opacidade>
-        <Menu>
-          <ListMenu>
-            <Link onClick={PlayAlfa()} num="1" to="/"><Li>Língua Portuguesa</Li></Link>
-            <Li>Matemática</Li>
-            <Li>Educação Manual e Plastica</Li>
-            <Li>Estudo do Meio</Li>
-            <Li>Língua Portuguesa</Li>
-            <Li>Matemática</Li>
-            <Li>Educação Manual e Plastica</Li>
-            <Li>Estudo do Meio</Li>
-            <Li>Língua Portuguesa</Li>
-            <Li>Matemática</Li>
-            <Li>Educação Manual e Plastica</Li>
-            <Li>Estudo do Meio</Li>
-
-          </ListMenu>
-        </Menu>
-        <Div1Conteiner>
-          {/*<H1> <H1>Tema:Alfabeto</H1></H1>*/}
-          <Div1>
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <B>Ba</B>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <C>Ca</C>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <D>Da</D>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <F>Fa</F>
-              </LinkAlfabeto>
-            </Link>    
-
-
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <B>Ba</B>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <C>Ca</C>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <D>Da</D>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <F>Fa</F>
-              </LinkAlfabeto>
-            </Link>    
-
-
-
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <B>Ba</B>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <C>Ca</C>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <D>Da</D>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <F>Fa</F>
-              </LinkAlfabeto>
-            </Link>    
-
-
-
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <B>Ba</B>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <C>Ca</C>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <D>Da</D>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <F>Fa</F>
-              </LinkAlfabeto>
-            </Link>    
-
-
-
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <B>Ba</B>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <C>Ca</C>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <D>Da</D>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <F>Fa</F>
-              </LinkAlfabeto>
-            </Link>    
-
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <B>Ba</B>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <C>Ca</C>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <D>Da</D>
-              </LinkAlfabeto>
-            </Link> 
-            <Link  onClick={PlayAlfa} id="Link" to="/Ba">
-              <LinkAlfabeto>
-                <F>Fa</F>
-              </LinkAlfabeto>
-            </Link>    
-          </Div1>
-        </Div1Conteiner>
-      </Opacidade>
-
-    </Estilo>
-  </>
+    <Opacidade>
+      <Div>
+        <H1 id="theme-top">Formação de sílabas</H1>
+      </Div>
+      <Div1>
+      </Div1>
+    </Opacidade>
 );
 }
  

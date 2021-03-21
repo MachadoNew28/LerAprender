@@ -1,7 +1,5 @@
 import React from 'react'
-import Estilo,{Opacidade,Div1,Menu,ListMenu,
-   LinkPortugues,A,B,C,D,E,I,Li,LinkConsoante,
-   LinkVogal} 
+import {Opacidade,Div1} 
 from '../Inicio/styled'
 import {FaAssistiveListeningSystems, FaBookOpen,
     FaBrain,FaCircle,FaGgCircle,FaHatCowboySide,
@@ -16,14 +14,12 @@ import { H1 } from '../Portugues/Alfabeto/styled'
 const EVP=()=>{
 return(
 <>
-<Estilo>
   <Opacidade>
       <H1>Educação Manual e Plastica</H1>
      <Div1 > 
         <MenuEVP></MenuEVP>
     </Div1>
   </Opacidade>
-</Estilo>
 </>
 );
 }

@@ -1,7 +1,5 @@
 import React from 'react'
-import Estilo,{Opacidade,Div1,Menu,ListMenu,
-   LinkPortugues,A,B,C,D,E,I,Li,LinkConsoante,
-   LinkVogal} 
+import {Opacidade,Div1}
 from '../Inicio/styled'
 import {FaAssistiveListeningSystems, FaBookOpen,
     FaBrain,FaCircle,FaGgCircle,FaHatCowboySide,
@@ -16,14 +14,14 @@ import { H1 } from '../Portugues/Alfabeto/styled'
 const Matematica=()=>{
 return(
 <>
-<Estilo>
   <Opacidade>
       <H1>Matemática</H1>
      <Div1 > 
-        <MenuMatematica>d</MenuMatematica>
+        <MenuMatematica>
+          
+        </MenuMatematica>
     </Div1>
   </Opacidade>
-</Estilo>
 </>
 );
 }

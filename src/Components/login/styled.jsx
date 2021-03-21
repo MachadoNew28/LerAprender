@@ -12,23 +12,99 @@ const Opacidade =styled.div`
     justify-content:center;
 
     .form-login{
-        height:480px;
-        width:28%;
+        height:490px;
+        width:40%;
         background-color:#fff;
-        border-radius:12px;
+        border-radius:4px;
 
         display:flex;
         align-items:center;
+        justify-content:space-between;
         flex-direction:column;
 
-        .input{
-            height:40px;
-            width:85%;
-            outline:none;
-            border:1px solid #eee;
-            border-radius:2px;
-            margin-bottom:18px;
+        .div-header{
+            display:flex;
+            align-items:center;             
+            justify-content:space-between;
+            width:100%;
+            border:none;
+            height:50px;
+            padding:12px;
+            border-bottom:1px solid #eee;
+            .title{
+               font-size:13px;
+               margin:0;
+               width:none;
+               display:initial;
+               font-family:Roboto,-apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+         }
+         .div-log-cad{
+            display:flex;
+            align-items:center;             
+            justify-content:flex-start;
+            width:98%;
+            border:none;
+            height:100px;
+            padding:12px;
+            background-color:#ececece7;
+            .link-cad, .link-log{
+
+                font-size:17px;
+                color:#fff;
+                background-color:${(active) =>( active == 1 ?'#ffc31de7':'#2e2d2bf6;')};
+                padding:17px; 
+                &:hover{
+                    background-color:#ffc31de7;
+                }           
+            }
+            .link-cad{
+                background-color:${(active) =>( active == 1 ? '#2e2d2bf6;':'#ffc31de7')};
+            }
+         }
+        
+         .div-input{  
+            justify-content:center;
+            align-items:center;
+            flex-direction:row;
+            height:200px;
+            border:none;
+             
+            border-bottom:1px solid #ececece7;
+            .input{
+                height:50px;
+                width:80%;
+                outline:none;
+                border:1px solid #eee;
+                border-radius:2px;
+                margin:12px;padding:10px;
+            }
+         }
+        
+        .div-footer{
+            height:70px;
+            width:95%;
+            border:none;
+            display:flex;
+            align-items:center;
+            padding-bottom:20px;
+            margin-bottom:14px;
+
+            #button-enter,#button-cancel{ font-size:17px;
+                color:#fff;
+                background-color:${(active) =>( active ?'#ffc31de7':'#2e2d2bf6;')};
+                padding:17px; 
+                height:50px;
+                border-radius:2px;
+                &:hover{
+                    background-color:#ffc31de7;
+                }           
+            }
+            #button-cancel{
+                background-color:${(active) =>( active ? '#2e2d2bf6;':'#ffc31de7')};
+            }       
         }
+
         .see-password{
             position:absolute;
             top:54%;
@@ -37,24 +113,7 @@ const Opacidade =styled.div`
             cursor:pointer;
             color:#0e0d0ddc;
         }
-        .link-cadastro{
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            width:50%;
-            height:40px;
-            border-radius:6px;
-            background-color:#dde;
-
-            &:hover{
-              opacity:0.6;
-            }
-
-            &:active{
-              opacity:0.9;
-            }
-
-        }
+         
         .link-reset-password{
              
             display:flex;
@@ -69,8 +128,8 @@ const Opacidade =styled.div`
     
     /**ESTILIZANDO O CADASTRAMENO */
     .form-cadastro{
-        height:600px;
-        width:60%;
+        height:606px;
+        width:58%;
         background-color:#fff;
         border-radius:4px;
         
@@ -119,8 +178,6 @@ const Opacidade =styled.div`
             }
             .link-cad{
                 background-color:${(active) =>( active ? '#2e2d2bf6;':'#ffc31de7')};
-                
-                
             }
          }
        
@@ -130,43 +187,32 @@ const Opacidade =styled.div`
             outline:none;
             border:1px solid #eee;
             border-radius:2px;
-            margin:12px;
+            margin:12px;padding:10px;
 
         }
-        .see-password{
-            position:absolute;
-            top:54%;
-            left:60%;
-            font-size:14px;
-            cursor:pointer;
-            color:#0e0d0ddc;
-        }
-        .link-cadastro{
+        .div-footer{
+            height:70px;
+            width:95%;
+            border:none;
             display:flex;
             align-items:center;
             justify-content:center;
-            width:50%;
-            height:40px;
-            border-radius:6px;
-            background-color:#dde;
+            padding-bottom:20px;
+            margin-bottom:14px;
 
-            &:hover{
-              opacity:0.6;
+            #button-enter,#button-cancel{ font-size:17px;
+                color:#fff;
+                background-color:${(active) =>( active ?'#ffc31de7':'#2e2d2bf6;')};
+                padding:17px; 
+                height:50px;
+                border-radius:2px;
+                &:hover{
+                    background-color:#ffc31de7;
+                }           
             }
-
-            &:active{
-              opacity:0.9;
-            }
-
-        }
-        .link-reset-password{
-             
-            display:flex;
-            align-items:flex-start;
-            justify-content:flex-start;
-            width:90%;
-            margin: 20px 0 0 20px;
-            font-size:10px;
+            #button-cancel{
+                background-color:${(active) =>( active ? '#2e2d2bf6;':'#ffc31de7')};
+            }       
         }
 
     }
@@ -214,9 +260,25 @@ export const Image =styled.img`
 
 export const Fieldset = styled.fieldset`
    display:flex;
-   align-items:center;
-   height:200px;
-   width:90%;
+   align-items:flex-start;
+   justify-content:center;
+   flex-wrap:wrap;
+   height:270px;
+   width:95%;
+   border:1px solid #eee;
+
+   .choice-sexo {
+      height:50px;
+      width:36%;
+      border:1px solid #eee;
+      margin:12px;
+      display:flex;
+      align-items:center;
+     
+      .M, .F{
+            margin-right:8px;padding:initial;
+      }
+   }
 `;
 export const Div = styled.div`
    display:flex;

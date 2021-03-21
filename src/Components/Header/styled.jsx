@@ -3,37 +3,79 @@ import Header from './header';
 import BgImg from './img/imgHeader.jpg'
 
 const HeadeR = styled.header`
+   width:100%;
+   background-color: #fff;
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+   height:49px;
+   border-bottom:1px solid #ffc31de7;
+   position:fixed;
+   box-shadow:2px 1px 12px 2px #f1f1f1;
+  /* box-shadow:2px 1px 6px #68676680;*/
+   
+   .div-direction {
+      display:flex;
+      align-items:center;
+    
+      #link-direction{
+        opacity:0.9;
+        padding:10px;
+
+        #icon-diretion{
+          color:#ffc31de7;
+          font-size:20px;
+          border:1px solid #ffc31de7;
+          border-right:none;
+          border-radius:50%;
+
+        }
+      }
+   }
+   .div-menu-icon{
+      width:30%;
+      height:40px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+       background-color:#ffffff1a;
+     #link{
+     display:flex;
+     align-items:center;
+      
+     opacity:none;
+     height:68%;
+     width:40px;
+     background-color:#ffc31de7;
+     margin:4px;
+     border:2px solid #ffffbb;
+     border-radius:30%;
+
+     #icons{
+      color:#fff;
+      font-size:37px;
+      margin:12px;
+    }
+   }
+   }
+   /* formato para telas de com+utador */
+  @media screen and (min-width:1000px){
    position:fixed;
    z-index:2;
    background-color: #fff;
    background-size:cover;
-  
-    border-bottom:4px solid #ffffbb;
-   height:80px;
+   border-bottom:4px solid #ffffbb;
+   height:60px;
    width:100%;
    box-shadow:4px 3px 8px #68676680;
    display:flex;
    align-items:center;
    justify-content:space-between;
-   
    top:0;
-   #link{
-     display:flex;
-     align-items:center;
-     justify-content:center;
-     opacity:none;
-     height:80%;
-     width:70px;
-     background-color:#ffff88;
-     
-     margin:12px;
-     border:2px solid #ffffbb;
-    #icons{
-      color:#ff9898;
-      font-size:34px;
-      margin:12px;
-    }
-   }
+  }
+    
+
+   
 
 `; export default HeadeR;
 
