@@ -54,7 +54,7 @@ const HeadeR = styled.header`
      #icons{
       color:#fff;
       font-size:37px;
-      margin:12px;
+      margin:14px;
     }
    }
    }
@@ -109,7 +109,6 @@ export const H1 = styled.h1`
     @keyframes neon{
      20%{
         color:#fff;
-       
          transform:translateX(-16%);
       }
       to{
