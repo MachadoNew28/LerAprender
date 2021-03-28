@@ -1,33 +1,29 @@
- import React from 'react'
- import Estilo,{Opacidade,Div1,Menu,ListMenu,
-    LinkPortugues,A,B,C,D,E,I,Li,LinkConsoante,
-    LinkVogal} 
-from '../Inicio/styled'
-import {FaAssistiveListeningSystems, FaBookOpen,
-     FaBrain,FaChevronCircleLeft,FaCircle,FaGgCircle,FaHatCowboySide,
-     FaHeartbeat,FaMusic,FaPencilAlt,FaQuestion,
-     FaSortNumericDown, FaSquare, FaSquareRootAlt, 
-     FaTree,FaChevronLeft}
-from 'react-icons/fa'
-import {Link} from 'react-router-dom'
-import {MenuMatematica, MenuPortugues} from '../Inicio/menu'
-import { H1 } from '../Portugues/Alfabeto/styled'
-import { Div } from '../Inicio/styled'
-var click=1;
-const Portugues=()=>{
-  const hora=Date.now;
-return(
-<>
-  <Opacidade>
-      <Div className="div-top-theme">
-         <H1 id="theme-top">Língua Portuguesa</H1>
-       </Div>
-      <Div1 > 
-        { click==2 ?<MenuMatematica></MenuMatematica>
-         :<MenuPortugues></MenuPortugues>}
-     </Div1>
-   </Opacidade>
-</>
+import React from 'react'
+import { Div,Menu,Item,Title,Icon } from '../Home/styled'
+import {} from 'react-icons/fa'
+import ArrayItemMenu from './menu'
+/*import HandleGetTitle from './AudioControl'*/
+
+const Portugues = () => {
+  return(
+  <> 
+   <Div className="div-top-theme">
+      <Menu>
+        {
+          ArrayItemMenu.map((item,index) =>
+           <>
+            <Item style = {{backgroundColor:item.color}}
+           /* onClick = {HandleGetTitle (item.title)}*/
+            onClick = {item.sound}>
+             <Icon> {item.icon}</Icon>
+             <Title> {item.title}</Title>
+            </Item>
+           </>
+          )
+        }
+      </Menu>
+    </Div> 
+  </>
 );
 }
 export default Portugues;

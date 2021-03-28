@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import fundo from './bginicio.jpg'
+import fundo from './ground.jpg'
+import BgImg from './bginicio.jpg'
+import BgImg2 from './fundoP.jpg'
  
 export const Global = createGlobalStyle`
   *{
@@ -14,46 +16,43 @@ export const Global = createGlobalStyle`
   }
    
   body{
-    background-color:#fdfdfdf1;
-    animation: neon12   infinite ease-out 240s;
-     
-    background-size:cover;
-    @keyframes neon12{
-      from{
-      
-        background-position:-1222px;
-        background-image:url(${fundo});
-        
-      }
-           35%{
-           
-              color:#ffaa00;
-            }
-            45%{
-              
-              color:#ff0aa0;
-            }
-      to{
-        filter:drop-shadow(-0 0 30px var(--cor));
-        background-image:url(${fundo});
-        background-position:1222px;
-        
-      }
-    }
-    
-     
-    
-     /* background-image:url(${fundo});*/
+ overflow:none;
   }
-  body::-webkit-scrollbar{
      
-  
+  body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-thumb{
      
 }
 
 #root{
-  margin:0 auto 0 auto;
+   height:1000px;
+   position:fixed;
+   width:100%;
+   animation: neon12 infinite ease-out 132s;
+   background-color:#fdfdfdf1;
+   overflow:none;
+   background-size:cover;
+    
+    @keyframes neon12{
+      from{
+      
+        background-position:-1222px;
+        background-image:url(${BgImg}); 
+        background-size:cover;
+        animation: neon12 infinite ease-out 32s;
+      }
+       
+      
+
+      to{
+        
+        background-image:url(${BgImg});
+        background-position:3222px;        
+        background-size:cover;
+      }
+    }
+     /* background-image:url(${fundo});*/
+      
 }
 `;

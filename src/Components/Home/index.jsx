@@ -1,16 +1,31 @@
 import React from 'react'
-import { Div } from './styled'
-import {FaArrow,aad} from 'react-icons/fa'
-function Play(){
-  const audio = new Audio(fundo)
-  audio.play()
-}
+import { Div,Menu,Item,Title,Icon } from './styled'
+import {} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
+import ArrayItemMenu from './menu'
+/*import HandleGetTitle from './AudioControl'*/
 
-const Inicio=()=>{
+const Inicio = () => {
   return(
   <> 
+ 
    <Div className="div-top-theme">
-      <FaArrow id = 'icon-arrow-set'></FaArrow>
+      <Menu>
+        {
+          ArrayItemMenu.map((item,index) =>
+           <>
+           <Link id = "link" to = {item.path}>
+              <Item style = {{backgroundColor:item.color}}
+              /* onClick = {HandleGetTitle (item.title)}*/
+                onClick = {item.sound}>
+                <Icon> {item.icon}</Icon>
+                <Title> {item.title}</Title>
+              </Item>
+           </Link>
+           </>
+          )
+        }
+      </Menu>
     </Div> 
   </>
 );
