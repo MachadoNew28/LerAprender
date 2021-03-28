@@ -5,7 +5,7 @@ import soundMp from './Audio/menus/mp.m4a'
 import soundMt from './Audio/menus/mt.m4a'
  const ArryItemMenu = [
    {
-    path:'/Português',
+    path:'/Portugues',
     title: 'Português',
     icon:<FaReadme style = {{color:'#fff990dd'}}></FaReadme>,
     color:'#fff990dd',

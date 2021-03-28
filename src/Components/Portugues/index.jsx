@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { Div,Menu,Item,Title,Icon } from '../Home/styled'
 import {} from 'react-icons/fa'
 import ArrayItemMenu from './menu'
@@ -9,15 +10,17 @@ const Portugues = () => {
   <> 
    <Div className="div-top-theme">
       <Menu>
-        {
+      {
           ArrayItemMenu.map((item,index) =>
            <>
-            <Item style = {{backgroundColor:item.color}}
-           /* onClick = {HandleGetTitle (item.title)}*/
-            onClick = {item.sound}>
-             <Icon> {item.icon}</Icon>
-             <Title> {item.title}</Title>
-            </Item>
+           <Link id = "link" to = {item.path}>
+              <Item style = {{backgroundColor:item.color}}
+              /* onClick = {HandleGetTitle (item.title)}*/
+                onClick = {item.sound}>
+                <Icon> {item.icon}</Icon>
+                <Title> {item.title}</Title>
+              </Item>
+           </Link>
            </>
           )
         }
