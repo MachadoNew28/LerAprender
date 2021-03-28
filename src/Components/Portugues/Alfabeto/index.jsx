@@ -13,7 +13,7 @@ const Alfabeto = () => {
       {
         ArrayLetras.map((item,index) =>
           <>
-            <Letra style = {{backgroundColor:item.color}}
+            <Letra style = {{ backgroundColor : item.color}}
             /* onClick = {HandleGetTitle (item.title)}*/
               onClick = {item.sound}>
             {/*Renderização de todas as letras no Document */}
