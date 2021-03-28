@@ -22,7 +22,7 @@ const Letra = styled.div`
     width : 26%;
     height : 81px;
     /************************/
-    font-size :70px;
+    font-size :70px
     /************************/
   }
    
