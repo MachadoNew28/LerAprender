@@ -1,21 +1,29 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add --dev @fortawesome/free-solid-svg-icons
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
 
 PATH: 
-  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Gitnew\cmd;C:\Users\AntonioMa\AppData\Local\Microsoft\WindowsApps;;C:\Users\AntonioMa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\AntonioMa\AppData\Roaming\npm;C:\Users\AntonioMa\AppData\Local\Yarn\bin
+  C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\AntonioMa\AppData\Local\Microsoft\WindowsApps;;C:\Users\AntonioMa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\AntonioMa\AppData\Local\Yarn\bin;C:\Users\AntonioMa\AppData\Roaming\npm
 
 Yarn version: 
   1.22.5
 
 Node version: 
-  10.16.3
+  15.14.0
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
-      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+  Error: https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.4.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141376:19)
+      at Object.onceWrapper (node:events:475:28)
+      at ClientRequest.emit (node:events:369:20)
+      at TLSSocket.emitRequestTimeout (node:_http_client:790:9)
+      at Object.onceWrapper (node:events:475:28)
+      at TLSSocket.emit (node:events:381:22)
+      at TLSSocket.Socket._onTimeout (node:net:481:8)
+      at listOnTimeout (node:internal/timers:557:17)
+      at processTimers (node:internal/timers:500:7)
 
 npm manifest: 
   {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import HeaderStyled, { Nav } from './styled'
-import { FaArrowAltCircleLeft, FaEdit, FaMusic, FaQuestion, } from 'react-icons/fa'
+import { FaArrowAltCircleLeft, FaEdit, FaMusic, FaQuestion, }  from 'react-icons/fa'
 /************************************************************* */
 function Header () {
    return (
